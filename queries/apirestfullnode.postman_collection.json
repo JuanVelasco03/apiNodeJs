@@ -1,0 +1,604 @@
+{
+	"info": {
+		"_postman_id": "837846d7-88da-4458-9793-87d39d0f821b",
+		"name": "apirestfullnode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21978928"
+	},
+	"item": [
+		{
+			"name": "SLIDE GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imagen",
+							"value": "assets/img/slide/slide01.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/mostrar-slide",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"mostrar-slide"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SLIDE POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/juany/OneDrive/Escritorio/1.1 08.ANGULAR.src/src/assets/img/slide/slide04.jpg"
+						},
+						{
+							"key": "titulo",
+							"value": "Lorem ipsum 4.",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/crear-slide",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"crear-slide"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SLIDE PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "titulo",
+							"value": "lorem ipsum 320",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "consectetur adipisicing elit.",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/juany/OneDrive/Escritorio/1.1 08.ANGULAR.src/src/assets/img/slide/slide03.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/editar-slide/631752824f5237b263a38c6f",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"editar-slide",
+						"631752824f5237b263a38c6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SLIDE DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/borrar-slide/631752824f5237b263a38c6f",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"borrar-slide",
+						"631752824f5237b263a38c6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GALERIA GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imagen",
+							"value": "assets/img/slide/slide01.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/mostrar-galeria",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"mostrar-galeria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GALERIA POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imagen",
+							"value": "assets/img/slide/slide01.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/crear-galeria",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"crear-galeria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GALERIA PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imagen",
+							"value": "assets/img/slide/slide01.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/editar-galeria",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"editar-galeria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GALERIA DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imagen",
+							"value": "assets/img/slide/slide01.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/borrar-galeria/631763206982a25d1b9a0586",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"borrar-galeria",
+						"631763206982a25d1b9a0586"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ARTICULOS GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imagen",
+							"value": "assets/img/slide/slide01.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/mostrar-articulos",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"mostrar-articulos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ARTICULO POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/juany/OneDrive/Escritorio/1.1 08.ANGULAR.src/src/assets/img/articulos/portada01.jpg"
+						},
+						{
+							"key": "url",
+							"value": "lorem-ipsum-1",
+							"type": "text"
+						},
+						{
+							"key": "titulo",
+							"value": "Lorem Ipsum 1",
+							"type": "text"
+						},
+						{
+							"key": "intro",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae accusamus voluptatum omnis non facere itaque aliquam temporibus, nisi pariatur facilis similique possimus eaque iure doloribus natus animi eos, suscipit eum!",
+							"type": "text"
+						},
+						{
+							"key": "contenido",
+							"value": "<h2>Lorem Ipsum 1</h2><img src=\\\"assets/img/slide/slide01.jpg\\\" class=\\\"py-3 img-fluid\\\"><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam maxime id expedita commodi? Eius, accusantium neque placeat facere minus deserunt praesentium dolorem nulla nihil consectetur aliquid, quos quo quas reiciendis. Non dolorem, tempora rem obcaecati corporis. Nesciunt aliquid excepturi, sint odio. Vitae ipsum aliquid aperiam itaque repellat, maiores voluptatibus debitis dignissimos voluptas voluptates dolore, veritatis exercitationem dolorum eos, quae sunt.</div><br><div>Voluptatum nobis delectus laborum corporis. Laborum asperiores voluptatum enim commodi nobis. Doloremque eligendi nisi amet maiores nihil iure dignissimos, labore iusto. Ut quas molestiae nihil reiciendis qui obcaecati totam facilis.</div><br><div>Quo eum deleniti iure animi quod numquam autem, vitae fugiat, molestias cum repellat omnis, ea explicabo aspernatur. Earum asperiores quod, corrupti ipsa ullam aut eligendi dolor vero necessitatibus, architecto nostrum.</div><br><div>Culpa similique necessitatibus velit perspiciatis quibusdam modi minima ab eligendi, nulla recusandae, maxime quis adipisci officia totam rem rerum ea voluptatem placeat ad amet cum corrupti! Sed, fugiat et nulla.</div>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/crear-articulo",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"crear-articulo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ARTICULO PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/juany/OneDrive/Escritorio/1.1 08.ANGULAR.src/src/assets/img/galeria/03.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/editar-articulo/631763206982a25d1b9a0586",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"editar-articulo",
+						"631763206982a25d1b9a0586"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ARTICULO DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imagen",
+							"value": "assets/img/slide/slide01.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/borrar-articulo/631763206982a25d1b9a0586",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"borrar-articulo",
+						"631763206982a25d1b9a0586"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ARTICULOS PUT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/juany/OneDrive/Escritorio/1.1 08.ANGULAR.src/src/assets/img/articulos/portada01.jpg"
+						},
+						{
+							"key": "url",
+							"value": "lorem-ipsum-1",
+							"type": "text"
+						},
+						{
+							"key": "titulo",
+							"value": "Lorem Ipsum 1",
+							"type": "text"
+						},
+						{
+							"key": "intro",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae accusamus voluptatum omnis non facere itaque aliquam temporibus, nisi pariatur facilis similique possimus eaque iure doloribus natus animi eos, suscipit eum!",
+							"type": "text"
+						},
+						{
+							"key": "contenido",
+							"value": "<h2>Lorem Ipsum 1</h2><img src=\\\"assets/img/slide/slide01.jpg\\\" class=\\\"py-3 img-fluid\\\"><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam maxime id expedita commodi? Eius, accusantium neque placeat facere minus deserunt praesentium dolorem nulla nihil consectetur aliquid, quos quo quas reiciendis. Non dolorem, tempora rem obcaecati corporis. Nesciunt aliquid excepturi, sint odio. Vitae ipsum aliquid aperiam itaque repellat, maiores voluptatibus debitis dignissimos voluptas voluptates dolore, veritatis exercitationem dolorum eos, quae sunt.</div><br><div>Voluptatum nobis delectus laborum corporis. Laborum asperiores voluptatum enim commodi nobis. Doloremque eligendi nisi amet maiores nihil iure dignissimos, labore iusto. Ut quas molestiae nihil reiciendis qui obcaecati totam facilis.</div><br><div>Quo eum deleniti iure animi quod numquam autem, vitae fugiat, molestias cum repellat omnis, ea explicabo aspernatur. Earum asperiores quod, corrupti ipsa ullam aut eligendi dolor vero necessitatibus, architecto nostrum.</div><br><div>Culpa similique necessitatibus velit perspiciatis quibusdam modi minima ab eligendi, nulla recusandae, maxime quis adipisci officia totam rem rerum ea voluptatem placeat ad amet cum corrupti! Sed, fugiat et nulla.</div>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/crear-articulo",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"crear-articulo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMINISTRADORES GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imagen",
+							"value": "assets/img/slide/slide01.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/mostrar-administradores",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"mostrar-administradores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMINISTRADORES POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/crear-administrador",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"crear-administrador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMINISTRADORES PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "admin2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "hola",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/editar-administrador/6317b671bc4d5bdbf2884fd8",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"editar-administrador",
+						"6317b671bc4d5bdbf2884fd8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMINISTRADORES DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "admin123",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "juan1234",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/borrar-administrador/6317b671bc4d5bdbf2884fd8",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"borrar-administrador",
+						"6317b671bc4d5bdbf2884fd8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMINISTRADORES LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
